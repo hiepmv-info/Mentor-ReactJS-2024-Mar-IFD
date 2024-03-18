@@ -16,13 +16,15 @@ This guide will walk you through the process of setting up a development environ
 
 1. Download and install NVM (Node Version Manager) from [here](https://github.com/coreybutler/nvm-windows/releases).
 
-![1710747311696](image/Day-01-Settingupthedevelopmentenvironment/1710747311696.png)
+    ![1710747311696](image/Day-01-Settingupthedevelopmentenvironment/1710747311696.png)
+
 2. Open a new command prompt and install Node.js using NVM with the command: `nvm install latest`
 
-![1710747397511](image/Day-01-Settingupthedevelopmentenvironment/1710747397511.png)
+    ![1710747397511](image/Day-01-Settingupthedevelopmentenvironment/1710747397511.png)
+
 3. Verify the installation with the command: `node -v`
 
-![1710747421767](image/Day-01-Settingupthedevelopmentenvironment/1710747421767.png)
+    ![1710747421767](image/Day-01-Settingupthedevelopmentenvironment/1710747421767.png)
 
 ### Create a React Project
 
