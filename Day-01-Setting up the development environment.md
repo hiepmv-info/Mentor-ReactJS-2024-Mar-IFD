@@ -34,11 +34,9 @@ Hướng dẫn này sẽ hướng dẫn bạn qua quá trình thiết lập môi
 
 ## KHỞI TẠO ỨNG DỤNG
 
-Sau khi tạo dự án, điều hướng vào thư mục dự án với lệnh: `cd my-app`
-
-Đối với NPX, bắt đầu ứng dụng với: `npm start`
-
-Đối với Vite, bắt đầu ứng dụng với: `npm run dev`
+- Sau khi tạo dự án, điều hướng vào thư mục dự án với lệnh: `cd my-app`
+- Đối với NPX, bắt đầu ứng dụng với: `npm start`
+- Đối với Vite, bắt đầu ứng dụng với: `npm run dev`
 
 ## THAM KHẢO
 
