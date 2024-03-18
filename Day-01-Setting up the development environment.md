@@ -1,45 +1,52 @@
-# Thiết Lập Môi Trường Phát Triển
+# Setting Up The Development Environment
 
-## GIỚI THIỆU
+## Introduction
 
-Hướng dẫn này sẽ hướng dẫn bạn qua quá trình thiết lập môi trường phát triển cho một dự án React sử dụng Node.js và NVM. Chúng ta cũng sẽ giới thiệu cách khởi tạo một dự án React bằng cả NPX và Vite.
+This guide will walk you through the process of setting up a development environment for a React project using Node.js and NVM. We will also introduce how to initialize a React project using both NPX and Vite.
 
-## YÊU CẦU
+## Requirements
 
-- Kiến thức cơ bản về JavaScript và React
-- Một máy tính sử dụng hệ điều hành Windows
-- Kết nối internet
+- Basic knowledge of JavaScript and React
+- A computer running Windows operating system
+- Internet connection
 
-## THIẾT LẬP KHÔNG GIAN LÀM VIỆC
+## Workspace Setup
 
-### Cài đặt Node.js với NVM
+### Install Node.js with NVM
 
-1. Tải xuống và cài đặt NVM (Node Version Manager) từ [đây](https://github.com/coreybutler/nvm-windows/releases).
-2. Mở cửa sổ lệnh mới và cài đặt Node.js bằng NVM với lệnh: `nvm install latest`
-3. Xác minh việc cài đặt bằng lệnh: `node -v`
+1. Download and install NVM (Node Version Manager) from [here](https://github.com/coreybutler/nvm-windows/releases).
+![1710747311696](image/Day-01-Settingupthedevelopmentenvironment/1710747311696.png)
+2. Open a new command prompt and install Node.js using NVM with the command: `nvm install latest`
+![1710747397511](image/Day-01-Settingupthedevelopmentenvironment/1710747397511.png)
+3. Verify the installation with the command: `node -v`
+![1710747421767](image/Day-01-Settingupthedevelopmentenvironment/1710747421767.png)
 
-### Tạo một Dự án React
+### Create a React Project
 
-#### Sử dụng NPX
+#### Using NPX
 
-1. Mở cửa sổ lệnh mới.
-2. Di chuyển đến thư mục mà bạn muốn tạo dự án của mình.
-3. Chạy lệnh: `npx create-react-app my-app`
+1. Open a new command prompt.
+2. Navigate to the directory where you want to create your project.
+3. Run the command: `npx create-react-app my-app`
 
-#### Sử dụng Vite
+#### Using Vite
 
-1. Đầu tiên, cài đặt create-vite toàn cầu với lệnh: `npm install -g create-vite`
-2. Di chuyển đến thư mục mà bạn muốn tạo dự án của mình.
-3. Chạy lệnh: `create-vite my-app --template react`
+1. First, install create-vite globally with the command: npm install -g create-vite
+2. Navigate to the directory where you want to create your project.
+3. Run the command: create-vite my-app --template react
+4. Navigate into the project directory with the command: cd my-app
+5. Install dependencies with the command: npm install
 
-## KHỞI TẠO ỨNG DỤNG
+## Initializing the Application
 
-- Sau khi tạo dự án, điều hướng vào thư mục dự án với lệnh: `cd my-app`
-- Đối với NPX, bắt đầu ứng dụng với: `npm start`
-- Đối với Vite, bắt đầu ứng dụng với: `npm run dev`
+- After creating the project, navigate into the project directory with the command: `cd my-app`
+- For NPX, start the application with: `npm start`
+![1710747775084](image/Day-01-Settingupthedevelopmentenvironment/1710747775084.png)
+- For Vite, start the application with: `npm run dev`
+![1710747937571](image/Day-01-Settingupthedevelopmentenvironment/1710747937571.png)
 
-## THAM KHẢO
+## References
 
-- [NVM cho Windows](https://github.com/coreybutler/nvm-windows)
+- [NVM for Windows](https://github.com/coreybutler/nvm-windows)
 - [Create React App](https://create-react-app.dev/)
 - [Vite](https://vitejs.dev/)
