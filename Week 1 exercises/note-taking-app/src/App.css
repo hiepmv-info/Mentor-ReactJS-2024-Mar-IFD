@@ -1,0 +1,81 @@
+.container, .block-form, .pd-40 {
+    padding: 40px;
+}
+
+.container {
+    max-width: 100%;
+    margin: 40px;
+    font-size: 20px;
+    font-family: sans-serif;
+}
+
+.block, .note-form {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.block {
+    background: #fff;
+}
+
+.block:last-child {
+    margin-bottom: 0;
+}
+
+.header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.note-form {
+    border: 1px solid #ddd;
+    width: 500px;
+    display: flex;
+    margin: auto;
+}
+
+.note-form input[type=text],
+.note-form textarea {
+    width: calc(100% - 22px);
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.note-form span {
+    display: block;
+    margin-bottom: 30px;
+}
+
+.note {
+    padding: 10px;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px 20px 50px 40px;
+}
+
+.edit {
+    padding: 10px 40px;
+    border: none;
+    border-radius: 4px;
+    background-color: #18a0fb;
+    color: white;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+.delete, .cancel {
+    padding: 10px 40px;
+    border: 1px solid #dc2323;
+    border-radius: 4px;
+    background-color: white;
+    color: #dc2323;
+    cursor: pointer;
+}
+
+.font-weight-bold {
+    font-weight: bold;
+}
