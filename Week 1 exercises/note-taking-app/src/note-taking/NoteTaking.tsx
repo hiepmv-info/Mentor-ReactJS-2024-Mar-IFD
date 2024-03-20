@@ -64,14 +64,14 @@ function NoteTaking() {
         }
     }, [initNotes]);
 
-    const noteProps = useMemo(() => ({ title, create: handleCreate, edit: handleSaveEdit, note: selectedNote, setTitle }), [title, handleCreate, handleSaveEdit, selectedNote, setTitle]);
+    const noteFormProps = useMemo(() => ({ title, create: handleCreate, edit: handleSaveEdit, note: selectedNote, setTitle, setSelectedNote }), [title, handleCreate, handleSaveEdit, selectedNote, setTitle]);
     const noteListProps = useMemo(() => ({ notes, edit: handleEdit, delete: handleDelete, deleteMultiple: handleDeleteMultiple }), [notes, handleEdit, handleDelete, handleDeleteMultiple]);
     const noteSearchProps = useMemo(() => ({ search: handleSearch }), [handleSearch]);
 
     return (
         <div className="container">
             <NoteSearch {...noteSearchProps} />
-            <NoteForm {...noteProps} />
+            <NoteForm {...noteFormProps} />
             <NoteList {...noteListProps} />
         </div>
     )

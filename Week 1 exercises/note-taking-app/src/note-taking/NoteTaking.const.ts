@@ -20,6 +20,7 @@ export type NoteFormProps = {
     note: Note | null;
     title: string;
     setTitle: React.Dispatch<React.SetStateAction<string>>;
+    setSelectedNote: React.Dispatch<React.SetStateAction<Note | null>>;
 }
 
 export function formatDate(date: Date) {

@@ -35,7 +35,7 @@ function NoteForm(noteFormProps: NoteFormProps) {
     }, []);
 
     const handleCancel = useCallback(() => {
-        setNote(initNote);
+        noteFormProps.setSelectedNote(null);
         noteFormProps.setTitle('Create Note');
     }, [noteFormProps]);
 
