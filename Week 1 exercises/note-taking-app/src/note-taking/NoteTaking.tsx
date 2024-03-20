@@ -57,6 +57,10 @@ function NoteTaking() {
     }, []);
 
     const handleSearch = useCallback((searchText: string | string[], searchType: string) => {
+        if (searchText === '' || searchText.length === 0) {
+            setNotes(initNotes);
+            return;
+        }
         if (searchType === 'Title') {
             setNotes(initNotes.filter((note) => note.title.toLowerCase().includes(searchText.toString().toLowerCase())));
         } else {
