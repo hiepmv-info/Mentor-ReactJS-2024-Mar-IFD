@@ -1,0 +1,44 @@
+.search {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.search__input,
+.search__select {
+    padding: 10px;
+    border: 1px solid #ddd;
+    font-size: 16px;
+}
+
+.search__input {
+    width: 500px;
+    border-radius: 4px 0 0 4px;
+}
+
+.search__select {
+    border-radius: 0 4px 4px 0;
+}
+
+.search__input:focus,
+.search__select:focus {
+    outline: none;
+    border-color: #00bcd4;
+}
+
+.search,
+.search__tag {
+    font-size: 14px;
+    display: flex;
+    justify-content: center;
+}
+
+.css-13cymwt-control {
+    border-radius: 4px 0 0 4px !important;
+    min-height: 40px !important;
+}
+
+.css-1jqq78o-placeholder,
+.css-1nmdiq5-menu {
+    text-align: left;
+    font-size: 16px;
+}
