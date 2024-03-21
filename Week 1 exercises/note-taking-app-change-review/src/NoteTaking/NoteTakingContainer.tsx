@@ -3,7 +3,7 @@ import NoteBox from './NoteBox/NoteBox';
 import NoteControl from './NoteControls/NoteControls';
 import NoteList from './NoteList/NoteList';
 import './NoteTakingContainer.css'
-import { Note, NoteSortContext } from './NoteTaking.const';
+import { Note, NoteSearchContext, NoteSortContext } from './NoteTaking.const';
 
 const initNoteList: Note[] = [
     {
@@ -40,12 +40,20 @@ function NoteTakingContainer() {
         setNotes(newNotes);
     };
 
+    const [search, setSearch] = useState('');
+
+    const onSearch = (newSearch: string) => {
+        setSearch(newSearch);
+    };
+
     return (
         <div className='container'>
             <NoteSortContext.Provider value={{ sort, order, onSort, notes }}>
-                <NoteBox />
-                <NoteControl />
-                <NoteList />
+                <NoteSearchContext.Provider value={{ search, onSearch }}>
+                    <NoteBox />
+                    <NoteControl />
+                    <NoteList />
+                </NoteSearchContext.Provider>
             </NoteSortContext.Provider>
         </div>
     )

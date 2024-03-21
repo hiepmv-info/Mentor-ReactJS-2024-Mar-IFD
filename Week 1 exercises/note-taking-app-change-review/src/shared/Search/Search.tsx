@@ -1,11 +1,18 @@
+import { useState } from "react";
 import Button from "../Button/Button";
+import { SearchProps } from "./Search.const";
 import "./Search.css"
 
-function Search() {
-    const handleClick = () => {
-        console.log('clicked');
+function Search(searchProps: SearchProps) {
+    const [search, setSearch] = useState('');
+    const handleSearch = (event: React.ChangeEvent<HTMLInputElement>) => {
+        setSearch(event.target.value);
     }
-    
+
+    const handleClick = () => {
+        searchProps.onChange(search);
+    }
+
     return (
         <>
             <div className="search">
@@ -13,6 +20,7 @@ function Search() {
                     className="search__input"
                     type="text"
                     placeholder="Search notes"
+                    onChange={handleSearch}
                 />
 
                 <select className="search__select">

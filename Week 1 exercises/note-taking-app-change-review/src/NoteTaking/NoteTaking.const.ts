@@ -80,3 +80,8 @@ export const NoteSortContext = createContext({
     onSort: (sort: string, order: string, notes: Note[]) => { },
     notes: [],
 });
+
+export const NoteSearchContext = createContext({
+    search: '',
+    onSearch: (newSearch: string) => { },
+});
