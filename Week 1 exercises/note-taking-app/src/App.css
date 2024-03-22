@@ -1,0 +1,197 @@
+.block-form,
+.pd-40 {
+  padding: 40px;
+}
+
+.container {
+  max-width: 100%;
+  margin: 40px;
+  font-size: 20px;
+  font-family: sans-serif;
+}
+
+.block,
+.note-form {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+.block {
+  background: #fff;
+}
+
+.block:last-child {
+  margin-bottom: 0;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.note-form {
+  border: 1px solid #ddd;
+  width: 500px;
+  margin: auto;
+}
+
+.note-form input[type="text"],
+.note-form textarea {
+  width: calc(100% - 22px);
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.note-form textarea {
+  vertical-align: top;
+}
+
+.note-form span {
+  display: block;
+  margin-bottom: 30px;
+}
+
+.note-form .select {
+  width: 100%;
+  margin-bottom: 20px;
+  font-size: 14px;
+}
+
+.note {
+  padding: 10px;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 25px 20px 25px 40px;
+}
+
+.edit {
+  padding: 10px 40px;
+  border: none;
+  border-radius: 4px;
+  background-color: #18a0fb;
+  color: white;
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+.delete,
+.cancel {
+  padding: 10px 40px;
+  border: 1px solid #dc2323;
+  border-radius: 4px;
+  background-color: white;
+  color: #dc2323;
+  cursor: pointer;
+}
+
+.font-weight-bold {
+  font-weight: bold;
+}
+
+.div-title-tag {
+  display: flex;
+  padding-bottom: 15px;
+}
+
+.div-title-tag input[type="checkbox"] {
+  margin-right: 20px;
+  cursor: pointer;
+}
+
+.note-content {
+  margin: 8px 0;
+  font-size: 20px;
+}
+
+.tag {
+  background-color: #f2f2f2;
+  padding: 5px 10px;
+  border-radius: 4px;
+  margin-right: 10px;
+  font-size: 14px;
+}
+
+.div-date {
+  margin-top: 15px;
+  font-size: 14px;
+}
+
+.note-date {
+  margin: 8px 0;
+}
+
+.div-sort-by {
+  margin-bottom: 20px;
+}
+
+.div-sort-by span {
+  margin-right: 10px;
+}
+
+.div-sort-by select {
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 4px;
+  margin-right: 10px;
+}
+
+.note-search,
+.div-button-search {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.note-search input[type="text"],
+.note-search select {
+  padding: 10px;
+  border: 1px solid #ddd;
+  font-size: 16px;
+}
+
+.note-search input[type="text"] {
+  width: 500px;
+  border-radius: 4px 0 0 4px;
+}
+
+.note-search select {
+  height: 40px;
+  margin-right: 10px;
+  border-left: none;
+  border-radius: 0 4px 4px 0;
+  vertical-align: top;
+}
+
+.note-search input[type="text"]:focus,
+.note-search select:focus {
+  outline: none;
+}
+
+.button-search {
+  padding: 10px 40px;
+  border: none;
+  border-radius: 4px;
+  background-color: #18a0fb;
+  color: white;
+  cursor: pointer;
+  margin-left: 10px;
+}
+
+.note-search .search-tag {
+  width: 522px;
+  font-size: 14px;
+  display: inline-block;
+}
+
+.css-13cymwt-control {
+  border-radius: 4px 0 0 4px !important;
+  min-height: 40px !important;
+}
+
+.css-1jqq78o-placeholder, .css-1nmdiq5-menu {
+  text-align: left;
+  font-size: 16px;
+}
