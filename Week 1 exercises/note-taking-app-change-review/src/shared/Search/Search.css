@@ -25,6 +25,12 @@
     border-color: #00bcd4;
 }
 
+.search-tag {
+    width: 522px;
+    font-size: 14px;
+    display: inline-block;
+  }
+
 .search,
 .search__tag {
     font-size: 14px;

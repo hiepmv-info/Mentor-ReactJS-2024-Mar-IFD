@@ -1,17 +1,18 @@
 import { useContext } from "react";
-import { NoteSearchContext, NoteSortContext } from "../NoteTaking.const";
+import { NoteContext } from "../NoteTaking.const";
 import NoteItem from "./NoteItem/NoteItem";
+import Button from "../../shared/Button/Button";
 
 function NoteList() {
-    const { notes } = useContext(NoteSortContext);
-    const { search } = useContext(NoteSearchContext);
-  
-    const filteredNotes = notes.filter(note => note.title.includes(search));
-  
+    const { notes, onDeleteMultiple, ids } = useContext(NoteContext);
+
     return (
-      filteredNotes.map((note) => (            
-        <NoteItem key={note.id} {...note} />
-      ))
+        <>
+            {ids.length > 0 && (<Button label="Delete Multiple" className="button-delete mb-20" onClick={() => onDeleteMultiple(ids)} />)}
+            {notes.map((note) => (
+                <NoteItem key={note.id} {...note} />
+            ))}
+        </>
     );
 }
 

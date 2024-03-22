@@ -1,10 +1,19 @@
+import { useContext } from "react";
 import Form from "../../../shared/Form/Form";
-import { formBlock } from "../../NoteTaking.const";
+import { NoteContext } from "../../NoteTaking.const";
+import { FormProps } from "../../../shared/Form/Form.const";
 
 function NoteForm() {
-    const form = formBlock;
+    const { formContext } = useContext(NoteContext);
+    const formProps: FormProps = {
+        type: formContext.title.includes("Edit") ? "edit" : "add",
+        formBlock: formContext.formBlock,
+        data: formContext.note,
+        onSubmit: formContext.onSubmit
+    }
+    
     return (
-        <Form {...form} />
+        <Form {...formProps} />
     )
 }
 

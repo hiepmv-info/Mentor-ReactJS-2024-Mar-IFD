@@ -4,11 +4,11 @@ export type SortBlock = {
     label: string;
 };
 
-export type SortProps = {
+export type SortProps<T> = {
     sort: string;
     order: string;
-    onSort: (sortType: string, sortLabel: string, data: []) => void;
-    data: [];
+    onSort: (sortType: string, sortLabel: string, data: T[]) => void;
+    data: T[];
     block: SortBlock[];
     defaultSort: {
         property: string;

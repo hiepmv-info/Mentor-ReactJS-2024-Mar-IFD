@@ -4,21 +4,20 @@ import './Info.css';
 function Info({ info }: { info: InfoBlock[] }) {
     return (
         <div>
-            {info.map((block, i) => (
-                block.type === "text" ? (
-                    <p key={i} className="info-content">{block?.label} {block[block.property]}</p>
-                ) : block.type === "multiSelect" ? (
+            {info.map((block, i) => {
+                const content = block[block.property];
+                const isTextOrDate = block.type === "text" || block.type === "date";
+                const isMultiSelect = block.type === "multiSelect";
+
+                return (
                     <div key={i}>
-                        {block[block.property].map((tag, index) => (
-                            <span key={index} className="info-multi">
-                                {tag}
-                            </span>
+                        {isTextOrDate && <p className="info-content">{block.label} {content}</p>}
+                        {isMultiSelect && Array.isArray(content) && content.map((tag: string, index: number) => (
+                            <span key={index} className="info-multi">{tag}</span>
                         ))}
                     </div>
-                    ) : block.type === "date" ? (
-                        <p key={i} className="info-content">{block.label} {block[block.property]}</p>
-                    ) : <></>
-            ))}
+                )
+            })}
         </div>
     )
 }

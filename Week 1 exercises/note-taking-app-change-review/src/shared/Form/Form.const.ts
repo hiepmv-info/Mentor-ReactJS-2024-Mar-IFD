@@ -3,16 +3,24 @@ export type Option = {
     label: string;
 }
 
-export type FormField = {
+export type InputBlock = {
     property: string;
     value: any;
     type: string;
     placeholder: string;
     options?: Option[];
     className?: string;
+    onChangeValue: (value: string | string[]) => void;
 }
 
 export type FormBlock = {
     title: string;
-    formFields: FormField[];
+    formFields: InputBlock[];
+}
+
+export type FormProps = {
+    type: string;
+    formBlock: FormBlock;
+    data: any;
+    onSubmit: (data: any, type: string) => void;
 }

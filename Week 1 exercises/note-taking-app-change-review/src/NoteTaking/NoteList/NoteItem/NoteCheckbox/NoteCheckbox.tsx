@@ -1,11 +1,12 @@
-import { NoteCheckboxProps } from "../../../NoteTaking.const";
+import { useContext } from "react";
+import { NoteContext } from "../../../NoteTaking.const";
 
-function NoteCheckbox({ checked, onChange }: NoteCheckboxProps) {
+function NoteCheckbox({ id }: { id: number}) {
+    const { itemContext } = useContext(NoteContext);
     return (
         <input
             type="checkbox"
-            checked={checked}
-            onChange={onChange}
+            onChange={() => itemContext.onClickCheckbox(id)}
             className="NoteCheckbox"
         />
     );

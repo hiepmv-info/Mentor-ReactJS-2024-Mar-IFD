@@ -1,14 +1,14 @@
 import { useContext } from "react";
 import Sort from "../../../shared/Sort/Sort";
-import { NoteSortContext } from "../../NoteTaking.const";
+import { Note, NoteContext } from "../../NoteTaking.const";
 
 function NoteSort() {
-    const setSort = useContext(NoteSortContext);
+    const { sortContext, notes } = useContext(NoteContext);
     const sortProps = {
-        sort: setSort.sort,
-        order: setSort.order,
-        data: setSort.notes,
-        onSort: setSort.onSort,
+        sort: sortContext.sort,
+        order: sortContext.order,
+        data: notes,
+        onSort: sortContext.onSort,
         block: [
             { property: "title", type: "string", label: "Title" },
             { property: "createdDate", type: "date", label: "Created Date" },
@@ -19,9 +19,7 @@ function NoteSort() {
             order: "Ascending",
         }
     }
-    return (
-        <Sort {...sortProps} />
-    );
+    return <Sort<Note> {...sortProps} />;
 }
 
 export default NoteSort;
