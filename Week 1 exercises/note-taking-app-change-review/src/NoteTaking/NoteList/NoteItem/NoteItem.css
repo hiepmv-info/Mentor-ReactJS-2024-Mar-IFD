@@ -1,0 +1,9 @@
+.checkbox-info {
+    display: flex;
+    padding-bottom: 15px;
+}
+
+.checkbox-info input[type="checkbox"] {
+    margin-right: 20px;
+    cursor: pointer;
+}
