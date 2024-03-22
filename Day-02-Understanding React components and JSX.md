@@ -120,6 +120,36 @@ In the example above, we use the expression `num1 + num2` inside the React eleme
 - Reusability: JSX helps you reuse components easily.
 - ... and many more features.
 
+## Exercise
+
+Example with website [The coffee house](https://www.thecoffeehouse.com/)
+Based on the website, we can divide the website into components as follows:
+
+- Header
+  - Logo
+  - NavigationMenu
+    - MenuItem
+- MainContent
+  - Banner
+  - ProductList
+    - ProductItem
+      - ProductCard
+  - Product Introduction
+    - ProductImage
+    - ProductDetail
+  - Shop Information
+    - ShopImage
+    - ShopDetail
+  - Blog
+    - BlogItem
+      - BlogCard
+      - BlogDetail
+- Footer
+  - FooterMenu
+    - FooterMenuItem
+  - FooterContact
+  - FooterSocial
+
 ## Conclusion
 
 Components and JSX are two important concepts in React. Understanding and using them effectively will help you build React applications quickly and efficiently.
